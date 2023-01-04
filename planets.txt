@@ -1,0 +1,22 @@
+void planet()
+{
+    glColor3f(0.2,0,0);
+    glPushMatrix ();
+       glTranslatef    (-3, 4, -1.0);
+       glutSolidSphere(0.6,100, 500);
+    glPopMatrix ();
+
+    glPushMatrix();
+
+    glColor3f(1,1,0);
+    glTranslatef(-3, 4, -1.0);
+    glutSolidTorus(0.1,1,80,80);
+    glPopMatrix();
+
+    //-another one---
+     glColor3f(0,0,1);
+    glPushMatrix ();
+       glTranslatef    (3, -2, -1.0);
+       glutSolidSphere(0.6,100, 500);
+    glPopMatrix ();
+}
